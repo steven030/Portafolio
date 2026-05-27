@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Steven Nuñez Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <header>
+        <h1>Steven Nuñez Dev</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section id="inicio">
+
+            <!-- PARTICLES -->
+            <div class="particles"></div>
+
+            <h2>Hello, I'm Steven Nuñez</h2>
+
+            <p>
+                IT Professional specialized in Data Science,
+                infrastructure monitoring, technical support
+                and modern software solutions.
+            </p>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <div class="card-content">
+                <p>
+                    I am an IT professional with experience in
+                    Data Center operations, infrastructure monitoring,
+                    troubleshooting and technical support.
+
+                    Passionate about technology, programming and
+                    continuous learning, currently expanding my
+                    knowledge in Data Science and Machine Learning.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <h3>Data Analysis</h3>
+                    <p>Python-based data analysis and visualization projects focused on extracting insights from datasets.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Linux Automation</h3>
+                    <p>Shell scripting solutions for automation, monitoring and server management.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Web Development</h3>
+                    <p>Responsive portfolio and modern web application development.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-linux"></i>
+                    <h3>Linux</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-terminal"></i>
+                    <h3>Shell Scripting</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Data Science</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Troubleshooting</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Infrastructure</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <div class="contact-buttons">
+
+                <a href="https://github.com/steven030" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/steven-nuñez-217b43180/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+                <a href="mailto:steven_nunez_dev@outlook.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    Correo
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Steven Nuñez Dev</p>
+    </footer>
+
+
+    <!-- PARTICLES SCRIPT -->
+    <script>
+        const container = document.querySelector(".particles");
+
+        function createParticle() {
+            const particle = document.createElement("span");
+
+            const size = Math.random() * 9 + 6;
+            particle.style.width = size + "px";
+            particle.style.height = size + "px";
+
+            particle.style.left = Math.random() * 100 + "%";
+            particle.style.animationDuration = (Math.random() * 8 + 5) + "s";
+            particle.style.opacity = Math.random();
+
+            container.appendChild(particle);
+
+            setTimeout(() => {
+                particle.remove();
+            }, 12000);
+        }
+
+        setInterval(createParticle, 200);
+    </script>
+
+</body>
+</html>
